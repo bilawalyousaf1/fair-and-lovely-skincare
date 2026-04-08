@@ -1,0 +1,373 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fair & Lovely - Premium Skincare</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <img src="images/cream.jpg" alt="Cream Cursor" class="cursor-follower" />
+
+    <header class="header">
+      <nav class="navbar">
+        <div class="logo">
+          <i class="fas fa-spa"></i>
+          <span>Fair & Lovely</span>
+        </div>
+        <ul class="nav-links">
+          <button class="theme-toggle" id="themeToggle">
+            <i class="fas fa-moon"></i>
+          </button>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#products">Products</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <button class="mobile-menu-btn">
+          <i class="fas fa-bars"></i>
+        </button>
+      </nav>
+    </header>
+
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <div class="hero-text">
+          <span class="badge">New Arrival</span>
+          <h1>Discover Your Natural Glow</h1>
+          <p>
+            Premium skincare that brings out your inner radiance. Experience the
+            transformation with Fair & Lovely's revolutionary formula.
+          </p>
+          <div class="hero-buttons">
+            <button class="primary-btn">
+              <span>Explore Products</span>
+              <i class="fas fa-arrow-right"></i>
+            </button>
+            <button class="secondary-btn">
+              <i class="fas fa-play"></i>
+              <span>Watch Demo</span>
+            </button>
+          </div>
+          <div class="hero-stats">
+            <div class="stat">
+              <h3>10M+</h3>
+              <p>Happy Customers</p>
+            </div>
+            <div class="stat">
+              <h3>98%</h3>
+              <p>Satisfaction Rate</p>
+            </div>
+            <div class="stat">
+              <h3>50+</h3>
+              <p>Countries</p>
+            </div>
+          </div>
+        </div>
+        <div class="hero-image">
+          <div class="product-card-main">
+            <div class="product-badge">Best Seller</div>
+            <img
+              src="images/img1.jpeg"
+              alt="Fair & Lovely Product"
+              class="main-product-image"
+              onmouseover="handle_change_image(event)"
+              onmouseout="previous_images_back(event)"
+            />
+            <div class="product-glow"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="features">
+      <div class="container">
+        <h2 class="section-title">Why Choose Fair & Lovely?</h2>
+        <div class="features-grid">
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fas fa-leaf"></i>
+            </div>
+            <h3>Natural Ingredients</h3>
+            <p>
+              Made with 100% natural and organic ingredients for gentle care
+            </p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fas fa-shield-alt"></i>
+            </div>
+            <h3>Dermatologically Tested</h3>
+            <p>Clinically proven and safe for all skin types</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fas fa-star"></i>
+            </div>
+            <h3>Visible Results</h3>
+            <p>See noticeable improvements in just 7 days</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fas fa-heart"></i>
+            </div>
+            <h3>Cruelty Free</h3>
+            <p>Never tested on animals, always ethical</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="products" id="products">
+      <div class="container">
+        <h2 class="section-title">Our Premium Collection</h2>
+        <div class="products-grid">
+          <div class="product-card">
+            <div class="product-image-wrapper">
+              <img src="images/product1.webp" alt="Product 1" />
+              <div class="product-overlay">
+                <button class="quick-view">Quick View</button>
+              </div>
+            </div>
+            <div class="product-info">
+              <h3>Radiance Cream</h3>
+              <p>
+                Reveals natural glow, evens skin tone, and helps reduce dark
+                spots for a brighter, smoother, and more radiant complexion.
+                Suitable for daily use.
+              </p>
+              <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <span>(245)</span>
+              </div>
+              <div class="product-footer">
+                <span class="price">$29.99</span>
+                <button class="add-cart-btn">
+                  <i class="fas fa-shopping-cart"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="product-image-wrapper">
+              <img src="images/product2.webp" alt="Product 2" />
+              <div class="product-overlay">
+                <button class="quick-view">Quick View</button>
+              </div>
+            </div>
+            <div class="product-info">
+              <h3>Night Serum</h3>
+              <p>
+                Deeply nourishes skin overnight, repairs damage, boosts
+                hydration, and restores natural radiance for a fresh, smooth,
+                and glowing look by morning.
+              </p>
+              <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+                <span>(189)</span>
+              </div>
+              <div class="product-footer">
+                <span class="price">$34.99</span>
+                <button class="add-cart-btn">
+                  <i class="fas fa-shopping-cart"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="product-image-wrapper">
+              <img src="images/product4.webp" alt="Product 3" />
+              <div class="product-overlay">
+                <button class="quick-view">Quick View</button>
+              </div>
+            </div>
+            <div class="product-info">
+              <h3>Daily Moisturizer</h3>
+              <p>
+                Provides long-lasting hydration, keeps skin soft and smooth, and
+                protects against dryness for a fresh, healthy, and glowing look
+                all day.
+              </p>
+              <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <span>(312)</span>
+              </div>
+              <div class="product-footer">
+                <span class="price">$24.99</span>
+                <button class="add-cart-btn">
+                  <i class="fas fa-shopping-cart"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="testimonials">
+      <div class="container">
+        <h2 class="section-title">What Our Customers Say</h2>
+        <div class="testimonials-grid">
+          <div class="testimonial-card">
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p>
+              "Absolutely amazing product! I saw results within a week. My skin
+              feels so smooth and radiant now."
+            </p>
+            <div class="customer">
+              <img src="https://i.pravatar.cc/150?img=1" alt="Customer" />
+              <div>
+                <h4>Sarah Johnson</h4>
+                <span>Verified Buyer</span>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p>
+              "Best skincare product I've ever used. The natural ingredients
+              make such a difference!"
+            </p>
+            <div class="customer">
+              <img src="https://i.pravatar.cc/150?img=5" alt="Customer" />
+              <div>
+                <h4>Emma Williams</h4>
+                <span>Verified Buyer</span>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p>
+              "I'm so impressed with the quality. My skin has never looked
+              better. Highly recommend!"
+            </p>
+            <div class="customer">
+              <img src="https://i.pravatar.cc/150?img=9" alt="Customer" />
+              <div>
+                <h4>Lisa Anderson</h4>
+                <span>Verified Buyer</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="newsletter">
+      <div class="container">
+        <div class="newsletter-content">
+          <div class="newsletter-text">
+            <h2>Get Exclusive Offers</h2>
+            <p>Subscribe to our newsletter and get 20% off your first order!</p>
+          </div>
+          <form class="newsletter-form">
+            <input
+              type="email"
+              placeholder="Enter your email address"
+              required
+            />
+            <button type="submit">
+              <span>Subscribe</span>
+              <i class="fas fa-paper-plane"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-col">
+            <div class="footer-logo">
+              <i class="fas fa-spa"></i>
+              <span>Fair & Lovely</span>
+            </div>
+            <p>Premium skincare products that bring out your natural beauty.</p>
+            <div class="social-links">
+              <a href="#"><i class="fab fa-facebook"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+          </div>
+          <div class="footer-col">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Products</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Customer Care</h4>
+            <ul>
+              <li><a href="#">Help Center</a></li>
+              <li><a href="#">Shipping Info</a></li>
+              <li><a href="#">Returns</a></li>
+              <li><a href="#">Track Order</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Contact Info</h4>
+            <ul>
+              <li><i class="fas fa-phone"></i> +1 234 567 8900</li>
+              <li><i class="fas fa-envelope"></i> info@fairlovely.com</li>
+              <li>
+                <i class="fas fa-map-marker-alt"></i> 123 Beauty Street, NY
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 Fair & Lovely. All Rights Reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.mjs"></script>
+  </body>
+</html>
